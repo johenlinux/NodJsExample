@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(6, 146, 92);
+}
+.nav-item {
+    padding: 20px;
+    list-style-type: none;
+}
+.nav-item a {
+    text-decoration: none;
+}
+/* Session */
+section {
+    padding-top: 30px;
+}
