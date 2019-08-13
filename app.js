@@ -10,20 +10,10 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 
-//Handlebar install
-const expressHbs = require('express-handlebars');
-
 const app = express();
 
-app.engine('hbs', expressHbs());
-
 //add view engine handlebars
-app.set('view engine', 'hbs');
-
-//Add View Engine with set method with pug
-//app.set('view engine', 'pug');
-
-// Root Direcotory for pug template
+app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.use(express.static(path.join(__dirname, 'public')));

@@ -12,6 +12,7 @@
     list-style-type: none;
 }
 .nav-item a {
+    color: #fff;
     text-decoration: none;
 }
 /* Session */
