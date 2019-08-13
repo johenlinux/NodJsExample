@@ -1,0 +1,12 @@
+<%- include('includes/head.ejs') %>
+<h1>This is the shop file</h1>
+<% if(prod.length >= 0) { %>
+    <ul>
+        <% prod.forEach((product) => { %>
+            <li><%= product.title %></li>
+        <% }) %>
+    </ul>
+<% } else { %>
+    <h1> Product Not found!!</h1>
+<% } %>
+<%- include('includes/foot.ejs') %>
